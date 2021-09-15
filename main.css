@@ -1,0 +1,83 @@
+/*  HEADER  */
+header {
+  background-color: rosybrown;
+}
+
+#some-id {
+  display: inline;
+}
+
+/* För att sätta h1 och menu i linje*/
+ul,
+nav {
+  display: inline;
+}
+.navbar {
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.navbar li {
+  display: inline; /*Listan ligger på rad och inte höjd*/
+  position: relative; /* New - to place the drop-down menu correctly */
+}
+
+.navbar a {
+  white-space: nowrap; /* New - to make the drop-down menu items stay on one row */
+  text-decoration: none;
+  color: teal;
+}
+
+.navbar a:hover {
+  color: saddlebrown;
+  border-color: #666 transparent;
+}
+
+.navbar li a.selected-parent, /* New - to style the selected parent */
+.navbar a.selected {
+  color: #222;
+  border-color: #222 transparent;
+}
+
+/* New - to style the submenu, start by hiding it using absolute positioning */
+.navbar ul ul {
+  background-color: #fff;
+  padding: 8px;
+  position: absolute;
+  left: -9999px;
+  z-index: 2;
+}
+
+/* Display the submenu when hovering the list element, absolute positioning */
+.navbar li:hover ul {
+  left: 0;
+}
+
+/* New - style items of the submenu when hovering and selected */
+.navbar li li a:hover,
+.navbar li li a.selected {
+  border-color: transparent;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px, black;
+  background-color: lightsalmon;
+  color: white;
+}
+
+/* CALENDAR */

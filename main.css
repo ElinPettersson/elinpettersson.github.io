@@ -1,83 +1,107 @@
-/*  HEADER  */
-header {
-  background-color: rosybrown;
-}
+/*HEADER*/
 
-#some-id {
-  display: inline;
-}
 
 /* För att sätta h1 och menu i linje*/
-ul,
+
 nav {
   display: inline;
 }
-.navbar {
+
+ul#menu li {
+
+  display:inline;
+  margin-right: 5%;
+  border-color: white;
+  border-style: initial;
+
 }
 
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.25rem;
+.topnav a:link, a:visited {
   color: white;
-}
-
-.navbar li {
-  display: inline; /*Listan ligger på rad och inte höjd*/
-  position: relative; /* New - to place the drop-down menu correctly */
-}
-
-.navbar a {
-  white-space: nowrap; /* New - to make the drop-down menu items stay on one row */
+  text-align: center;
   text-decoration: none;
-  color: teal;
+  display: inline-block;
+  border-style: solid;
+  border-color: white;
+  border-radius: 0px;
+  padding: 2%; 
+}
+.topnav a:hover, a:active {
+  
+  background-color:rgba(238, 232, 170, 0.521);
 }
 
-.navbar a:hover {
-  color: saddlebrown;
-  border-color: #666 transparent;
-}
+/*BODY*/
 
-.navbar li a.selected-parent, /* New - to style the selected parent */
-.navbar a.selected {
-  color: #222;
-  border-color: #222 transparent;
-}
-
-/* New - to style the submenu, start by hiding it using absolute positioning */
-.navbar ul ul {
-  background-color: #fff;
-  padding: 8px;
-  position: absolute;
-  left: -9999px;
-  z-index: 2;
-}
-
-/* Display the submenu when hovering the list element, absolute positioning */
-.navbar li:hover ul {
-  left: 0;
-}
-
-/* New - style items of the submenu when hovering and selected */
-.navbar li li a:hover,
-.navbar li li a.selected {
-  border-color: transparent;
-}
-
-img {
-  width: 200px;
-  margin: 10px;
-}
-
-button {
-  cursor: pointer;
-  appearance: none;
-  border-radius: 4px;
-  font-size: 1.25rem;
-  padding: 0.75rem 1rem;
-  border: 1px, black;
-  background-color: lightsalmon;
+header {
   color: white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body {
+  color: white;
+  background-color: black;
+  background-image: url("photos/yellow.jpg"), url("photos/fire.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30%, 40%;
+  background-position: right top, left bottom;
+ 
 }
 
-/* CALENDAR */
+
+h1{
+  color: white;
+  font-size: 200%;
+  font-weight: lighter;
+}
+
+h2{
+  color:white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h4{
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+#homeArticle{
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+#name {
+  display: inline;
+  font-size: 300%;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  text-align: center;
+  padding: 3px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  display: block;
+  
+  
+}
+.footer a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  padding: 2%; 
+}
+.footer a:hover, a:active {
+  
+  background-color:rgba(238, 232, 170, 0.521);
+}

@@ -1,52 +1,70 @@
 /*HEADER*/
 
 
-/* För att sätta h1 och menu i linje*/
 
-nav {
-  display: inline;
-}
-
-ul#menu li {
-
-  display:inline;
-  margin-right: 5%;
+.nav-main {
+  width: 100%;
+  height: 100px;
   border-color: white;
   border-style: initial;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+  top:0;
 
 }
 
-.topnav a:link, a:visited {
+.nav-main ul {
+display: flex;
+flex-wrap: wrap;
+padding-left: 2%;
+}
+
+.nav-main ul li {
+  list-style: none;
+  line-height: 100%;
+  
+  }
+
+.nav-main ul li a:link, a:visited {
   color: white;
   text-align: center;
   text-decoration: none;
+  height: 100%;
   display: inline-block;
   border-style: solid;
   border-color: white;
-  border-radius: 0px;
-  padding: 2%; 
+  border-width: thin;
+  padding: 0 20px;
+  text-transform: uppercase; 
+  margin-right: 40px;
 }
-.topnav a:hover, a:active {
+.nav-main ul li a:hover, a:active {
   
   background-color:rgba(238, 232, 170, 0.521);
 }
 
 /*BODY*/
 
-header {
-  color: white;
-  font-family: 'Red Hat Display', sans-serif;
-}
 body {
   color: white;
   background-color: black;
   background-image: url("photos/yellow.jpg"), url("photos/fire.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 30%, 40%;
+  background-size: 30%, 30%;
   background-position: right top, left bottom;
+  font-family: 'Red Hat Display', sans-serif;
+  background-attachment: scroll, fixed;
+  
  
 }
 
+section {
+  margin-top: 40px;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+}
 
 h1{
   color: white;
@@ -70,18 +88,24 @@ h4{
 
 }
 
-#name {
-  display: inline;
-  font-size: 300%;
+img{
+  width: 20%;
+  text-align: center;
 }
 
+button {
+  padding: 10px;
+  font-weight:lighter;
+  font-size: 100%;
+  text-transform: uppercase;
+  background-color: rgba(238, 232, 170, 0.521);
+  color: white;
+  text-align: center;
+}
 
-
-
-
-
-
-
+button:hover {
+  background-color: rgba(238, 232, 170);
+}
 
 footer{
   text-align: center;
@@ -90,9 +114,10 @@ footer{
   color: white;
   font-family: 'Red Hat Display', sans-serif;
   display: block;
-  
-  
+  background-attachment: fixed;
+  margin-bottom: 0%;
 }
+
 .footer a:link, a:visited {
   color: white;
   text-align: center;
@@ -103,5 +128,5 @@ footer{
 }
 .footer a:hover, a:active {
   
-  background-color:rgba(238, 232, 170, 0.521);
+  color:rgba(238, 232, 170, 0.521);
 }
